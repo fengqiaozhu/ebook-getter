@@ -1,4 +1,4 @@
-# 名称： 网文下载api
+# 名称： 网文下载模块
 # 安装： `npm i ebook-getter`
 # 使用：
 ```nodejs
