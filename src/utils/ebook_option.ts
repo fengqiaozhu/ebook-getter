@@ -7,7 +7,7 @@
 // Export methods of oprating the ebooks.
 
 import Request from './request'
-import { EbookAPI } from '../interfaces'
+import {EbookAPI} from '../interfaces'
 
 
 class Ebook {
@@ -56,8 +56,15 @@ class Ebook {
     }
 
     private jsonParse(str: string) {
-        str = str.trim().replace(/\,\]/ig, ']')
-        return JSON.parse(str)
+        try {
+            str = str.trim().replace(/\,\]/ig, ']')
+            return JSON.parse(str)
+        } catch (err) {
+            return {
+                err: 'JSON parse failed!',
+                sourceString: str.trim()
+            }
+        }
     }
 }
 

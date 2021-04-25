@@ -1,6 +1,6 @@
 {
   "name": "ebook-getter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a net ebook getter",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,8 +14,8 @@
     "lib"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/fengqiaozhu/ebook-getter.git"
+    "type": "git",
+    "url": "https://github.com/fengqiaozhu/ebook-getter.git"
   },
   "author": "fQ",
   "license": "ISC",
